@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Contact Form & To-Do List</title>
+    <link rel="stylesheet" href="task-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <section class="contact-section">
+            <h2>Get in Touch <i class="fas fa-paper-plane"></i></h2>
+            <form id="contactForm" class="contact-form">
+                <div class="input-group floating">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                    <span class="validation-icon"></span>
+                </div>
+                <div class="input-group floating">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                    <span class="validation-icon"></span>
+                </div>
+                <div class="input-group floating">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="char-counter"><span id="charCount">0</span>/150</div>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+                <div class="form-status"></div>
+            </form>
+        </section>
+        <section class="todo-section">
+            <h2>My Tasks <i class="fas fa-tasks"></i></h2>
+            <div class="todo-container">
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button id="addTodoBtn"><i class="fas fa-plus"></i></button>
+                </div>
+                <ul id="todoList"></ul>
+                <div class="todo-controls">
+                    <span id="taskCount">0 tasks</span>
+                    <button id="clearCompleted">Clear Completed</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="task-2.js"></script>
+</body>
+</html>
